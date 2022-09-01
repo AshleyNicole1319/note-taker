@@ -27,5 +27,7 @@ The application should run from there.
 ## Usage
 To create a new note, click the `+` icon in the top-right corner. Once a title and note content are added, a save icon will appear in the top right. Click the save icon, and your new note will now be on your list. In your list of notes, a red trash can will be visible, click this if you want to delete a note.
 
+![NoteTakerAW.gif](/../main/assets/images/NoteTakerAW.gif)
+
 ## Questions
 For any questions, please contact me at [a-warford96@comcast.net](mailto:a-warford96@comcast.net) or visit my GitHub: [AshleyNicole1319](https://github.com/AshleyNicole1319).
