@@ -2,8 +2,8 @@ const express = require('express');
 const PORT = process.env.port || 3001;
 const app = express();
 const fs = require('fs');
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/APIroutes');
+const htmlRoutes = require('./routes/HTMLroutes');
 
 //app.use adds new middleware to app
 //express.static targets the static 'public' files
@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Use Routes
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+app.use('/api', APIroutes);
+app.use('/', HTMLroutes);
 
 //Remember: hardcoded 3001 won't open on Heroku
 app.listen(PORT, () => {
