@@ -12,6 +12,7 @@ This is an easy-to-use note-taking web application that is intended for users to
 
 
 ### Heroku Deployment
+I can't seem to get this working...
 
 
 ## Installation
