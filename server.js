@@ -17,7 +17,7 @@ app.use(express.json());
 
 //Use Routes
 app.use('/api', APIroutes);
-app.use('/', HTMLroutes);
+app.use('/', );
 
 //Remember: hardcoded 3001 won't open on Heroku
 app.listen(PORT, () => {

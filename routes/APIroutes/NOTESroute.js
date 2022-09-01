@@ -1,8 +1,7 @@
 const router = require('express').Router();
-const fs = require('fs'); //Reminder: fs helps store, access, and manage data
+const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
-//const createNote = require('../../lib/notes'); //Do I need this?
 const db = require('../../db/db.json');
 
 // get route for notes
@@ -18,11 +17,11 @@ router.post('/notes', (req, res) => {
     note.id = uuidv4();
     db.push(note);
     
-    //
+    //edit db
     fs.writeFile('./db/db.json', JSON.stringify(db), function(err){
-            if (err) throw err
-            res.json(note);
-            console.log('Your note has been saved!');
+        if (err) throw err
+        res.json(note);
+        console.log('Your note has been saved!');
     })
 });    
 
@@ -41,4 +40,4 @@ router.delete('/notes/:id', (req, res) => {
     })
 });
 
-module.exports = router; 
+module.exports = router;
