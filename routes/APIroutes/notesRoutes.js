@@ -2,7 +2,7 @@ const router = require('express').Router();
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
-const db = require('../db/db.json');
+const db = require('../../db/db.json');
 
 
 router.get('/notes', (req, res) => {
@@ -19,7 +19,7 @@ router.post('/notes', (req, res) => {
     fs.writeFile('./db/db.json', JSON.stringify(db, null, 2), function(err) {
         if (err) throw err;
         res.json(note);
-        console.log('Note has been saved!');
+        console.log('SUCCESS: Note has been saved!');
     })
 });
 
@@ -36,6 +36,5 @@ router.delete('/notes/:id', (req, res) => {
         console.log('Note has been deleted!');
     })
 });
-
 
 module.exports = router;
