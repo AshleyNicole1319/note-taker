@@ -1,19 +1,22 @@
 # Project 11: Express.js Challenge
 ## Note Taker
-This is an easy-to-use note-taking web application that is intended for users to write, save, and delete notes. Note Taker is supported by an Express.js back end, and will save and retrieve note data from a JSON file.
+Note taking application where users can create, save, delete notes. Created utilizing Express.js and JSON file. 
 
 ![screenshot.png](/../main/assets/images/screenshot.png)
 
 ### Built With:
-- HTML
-- CSS / [Bootstrap](https://getbootstrap.com/)
-- JavaScript
+- HTML - cloned
+- CSS / [Bootstrap](https://getbootstrap.com/) - cloned
+- JavaScript 
 - [Node.js](https://nodejs.org/en/)
 - [Express.js](https://expressjs.com/)
 
 
 ### Heroku Deployment
 I can't seem to get this working...
+
+Here is the URL though:
+https://note-taker-warford.herokuapp.com/
 
 ![heroku1.png](/../main/assets/images/heroku1.png)
 ![heroku2.png](/../main/assets/images/heroku2.png)
